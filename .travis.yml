@@ -19,16 +19,16 @@ script:
   # Use either `docker-compose` or individual `docker build` commands
   # Build
   - docker build -t udagram-api-feed ./udagram-api-feed
+  - docker tag udagram-api-feed mabhedlankosi/udagram-api-feed:v1
   - docker build -t udagram-api-user ./udagram-api-user
+  - docker tag udagram-api-user mabhedlankosi/udagram-api-user:v1
   - docker build -t udagram-frontend ./udagram-frontend
+  - docker tag udagram-frontend mabhedlankosi/udagram-frontend:v1
   - docker build -t reverseproxy ./reverseproxy
+  - docker tag reverseproxy mabhedlankosi/reverseproxy:v1
   # Do similar for other three images
 
   # Tagging
-  - docker tag udagram-api-feed mabhedlankosi/udagram-api-feed:v1
-  - docker tag udagram-api-user mabhedlankosi/udagram-api-user:v1
-  - docker tag udagram-frontend mabhedlankosi/udagram-frontend:v1
-  - docker tag reverseproxy mabhedlankosi/reverseproxy:v1
   # Do similar for other three images
 
 
