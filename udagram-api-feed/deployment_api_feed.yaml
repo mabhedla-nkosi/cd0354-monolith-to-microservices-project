@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: mabhedlankosi/udagram-api-feed
+        image: mabhedlankosi/udagram-api-feed:v1
         env:
           - name: POSTGRES_USERNAME
             valueFrom:
@@ -74,4 +74,3 @@ spec:
                 optional: false
         ports:
         - containerPort: 8080
-        imagePullPolicy: Always

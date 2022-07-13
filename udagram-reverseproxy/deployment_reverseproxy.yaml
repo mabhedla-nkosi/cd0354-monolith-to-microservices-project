@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: udagram-app-reverseproxy
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: mabhedlankosi/reverseproxy
+        image: mabhedlankosi/reverseproxy:v1
         env:
           - name: POSTGRES_USERNAME
             valueFrom:
@@ -74,4 +74,3 @@ spec:
                 optional: false
         ports:
         - containerPort: 8080
-        imagePullPolicy: Always
