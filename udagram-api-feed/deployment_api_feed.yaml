@@ -73,5 +73,5 @@ spec:
                 key: URL
                 optional: false
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         imagePullPolicy: Always
