@@ -45,3 +45,4 @@ set_env.sh
 .npmrc
 aws-secret.yaml
 env-secret.yaml
+.env
